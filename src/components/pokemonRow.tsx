@@ -6,7 +6,7 @@ const PokemonListing: React.FC<{
   pokemon: PokemonQueryResult[number];
 }> = ({ pokemon }) => {
   return (
-    <div className="flex border-b p-2 items-center justify-between border-2 hover:ring-2 ring-offset-1 ring-black">
+    <div className="flex p-2 items-center justify-between border-2 hover:border-2 hover:border-black">
       <div className="flex items-center">
         <Image
           src={pokemon.spriteUrl}

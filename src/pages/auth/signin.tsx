@@ -1,13 +1,13 @@
-import React from "react";
-import { Provider } from "next-auth/providers";
-import { GetServerSideProps, GetStaticProps } from "next";
-import { getProviders, getSession, signIn } from "next-auth/react";
 import {
   FacebookOutlined,
   GoogleOutlined,
   LoginOutlined,
 } from "@ant-design/icons";
+import { GetServerSideProps } from "next";
+import { Provider } from "next-auth/providers";
+import { getProviders, signIn } from "next-auth/react";
 import Head from "next/head";
+import React from "react";
 
 const Providers: React.FC<{ providers: Provider[] }> = ({ providers }) => {
   return (
@@ -49,7 +49,9 @@ const SignInPage: React.FC<{ providers: Provider[] }> = ({ providers }) => {
       <div className="h-screen w-full py-16 px-4">
         <div className="flex flex-col items-center justify-center">
           <LoginOutlined className="text-8xl drop-shadow-2xl" />
-          <p className="tracking-widest p-6 text-2xl drop-shadow-2xl">Roundest Mon</p>
+          <p className="tracking-widest p-6 text-2xl drop-shadow-2xl">
+            Roundest Mon
+          </p>
           <div className="bg-white shadow-2xl border-black border-2 rounded lg:w-1/3  md:w-1/2 w-full p-10 mt-16">
             <p className="focus:outline-none text-2xl font-extrabold leading-6 ">
               Login to your account

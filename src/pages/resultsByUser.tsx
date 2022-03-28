@@ -16,6 +16,7 @@ const ResultsPage: React.FC<{}> = () => {
         <title>{session?.user?.name}&apos;s results</title>
       </Head>
       <div className="h-screen w-screen flex flex-col justify-between align-middle items-center overflow-auto">
+        <div className="p-2" />
         <h2 className="text-2xl capitalize sticky top-0">
           {(session && session?.user?.name) || "User"}&apos;s results
         </h2>
@@ -25,7 +26,7 @@ const ResultsPage: React.FC<{}> = () => {
         ) : (
           <>
             <div className="p-2" />
-            <div className="flex flex-col w-full max-w-2xl shadow-2xl border border-black">
+            <div className="flex flex-col w-full max-w-2xl shadow-2xl">
               {pokemons.map((currentPokemon, index) => (
                 <PokemonListing pokemon={currentPokemon} key={index} />
               ))}
