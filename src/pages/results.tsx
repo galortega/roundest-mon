@@ -2,7 +2,7 @@ import PokemonListing from "@/components/pokemonRow";
 import {
   getPokemonInOrder,
   PokemonQueryResult,
-} from "@/utils/getPokemonInOrder";
+} from "@/backend/utils/getPokemonInOrder";
 import type { GetServerSideProps } from "next";
 import React from "react";
 

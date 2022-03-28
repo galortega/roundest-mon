@@ -1,6 +1,8 @@
 import { generateCountPercent } from "@/utils/generateCountPercent";
-import { PokemonFromServer } from "@/utils/useGetPokemonPair";
+import { inferQueryResponse } from "@/utils/trpc";
 import Image from "next/image";
+
+export type PokemonFromServer = inferQueryResponse<"get-pokemon-by-id">;
 
 const btnPrimary =
   "inline-block font-medium border border-solid cursor-pointer text-center text-xs py-1 px-2 text-white bg-pink-600 border-pink-600 hover:bg-white hover:text-pink-600";

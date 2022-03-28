@@ -1,6 +1,5 @@
-import { prisma } from "@/backend/utils/prisma";
-import { AsyncReturnType } from "./ts-bs";
-
+import { prisma } from "./prisma";
+import { AsyncReturnType } from "@/utils/ts-bs";
 export type PokemonQueryResult = AsyncReturnType<typeof getPokemonInOrder>;
 
 export const getPokemonInOrder = async () =>

@@ -1,4 +1,4 @@
-import { PokemonQueryResult } from "./getPokemonInOrder";
+import { PokemonQueryResult } from "@/backend/utils/getPokemonInOrder";
 
 export const generateCountPercent = (pokemon: PokemonQueryResult[number]) => {
   const { VoteFor, VoteAgainst } = pokemon._count;

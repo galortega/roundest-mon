@@ -1,15 +1,15 @@
 import { inferQueryResponse, trpc } from "@/utils/trpc";
 import { usePlausible } from "next-plausible";
 
-export type PokemonFromServer = inferQueryResponse<"get-pokemon-by-id">;
-interface PokemonPair {
-  firstPokemon?: PokemonFromServer;
-  secondPokemon?: PokemonFromServer;
+export type PokemonFromServer = inferQueryResponse<"get-pokemon-pair">;
+
+interface PokemonPairHook {
+  pokemonPair?: PokemonFromServer;
   fetchingNext: boolean;
   voteForRoundest: (selected: number) => void;
 }
 
-export const useGetPokemonPair: () => PokemonPair = () => {
+export const useGetPokemonPair: () => PokemonPairHook = () => {
   const {
     data: pokemonPair,
     refetch,
@@ -45,8 +45,7 @@ export const useGetPokemonPair: () => PokemonPair = () => {
   const fetchingNext = voteMutation.isLoading || isLoading;
 
   return {
-    firstPokemon: pokemonPair?.firstPokemon,
-    secondPokemon: pokemonPair?.secondPokemon,
+    pokemonPair,
     fetchingNext,
     voteForRoundest,
   };

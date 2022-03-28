@@ -1,7 +1,7 @@
 import { createRouter } from "@/backend/createRouter";
 import { prisma } from "@/backend/utils/prisma";
-import { getPokemonPair } from "@/utils/getPokemonPair";
-import { getPokemonVotesByUser } from "@/utils/getPokemonVotesByUser";
+import { getPokemonPair } from "@/backend/utils/getPokemonPair";
+import { getPokemonVotesByUser } from "@/backend/utils/getPokemonVotesByUser";
 import { getOptionsForVote } from "@/utils/getRandomPokemon";
 import { z } from "zod";
 

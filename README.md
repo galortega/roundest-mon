@@ -1,7 +1,6 @@
 ## Description
 Misión: encontrar al pokemón más redondo a través de la sabiduría de las masas.
-Tecnolgías: 
-    Implementadas
+    Implementadas:
     *   nextjs
     *   typescript
     *   tailwind
@@ -105,7 +104,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     []  mejoras visuales
         [x]  seleccionar colores para el tema claro
         [x]  mejorar presentación del home en pc
-        []  mejorar presentación del home para móvil
+        [x]  mejorar presentación del home para móvil
         []  mejorar presentación de resultados para móvil y pc
         []  mejorar presentación de login para móvil y pc
         []  agregar switch de tema oscuro

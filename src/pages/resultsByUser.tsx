@@ -1,7 +1,5 @@
 import PokemonListing from "@/components/pokemonRow";
-import { getPokemonVotesByUser } from "@/utils/getPokemonVotesByUser";
 import { trpc } from "@/utils/trpc";
-import { AsyncReturnType } from "@/utils/ts-bs";
 import Head from "next/head";
 import React from "react";
 

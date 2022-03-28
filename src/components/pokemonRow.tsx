@@ -1,5 +1,5 @@
 import { generateCountPercent } from "@/utils/generateCountPercent";
-import { PokemonQueryResult } from "@/utils/getPokemonInOrder";
+import { PokemonQueryResult } from "@/backend/utils/getPokemonInOrder";
 import Image from "next/image";
 
 const PokemonListing: React.FC<{
