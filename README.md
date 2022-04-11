@@ -1,5 +1,6 @@
 ## Description
 Encontrar al pokemón más redondo a través de la sabiduría de las masas.
+Este proyecto está basado en https://www.youtube.com/watch?v=PKy2lYEnhgs&t=5025s 
 
     Implementadas:
     *   nextjs
@@ -17,14 +18,11 @@ Encontrar al pokemón más redondo a través de la sabiduría de las masas.
     *   pwa
     *   livepeer
     *   web3
-    *   stacks
-    *   lightning
+    *   stacks.js
     *   storybook
     *   framer-motion
     *   algo para testing (frontend y backend)
     *   algo para AI (tensorflow.js)
-
-https://www.youtube.com/watch?v=PKy2lYEnhgs&t=5025s 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
