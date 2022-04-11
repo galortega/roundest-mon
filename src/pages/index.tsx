@@ -10,32 +10,15 @@ const Home: NextPage = () => {
     <>
       {pokemonPair ? (
         <>
-          {/* Desktop */}
-          <div className="hidden md:flex relative bg-white shadow-2xl shadow-black border-2 border-black justify-between items-center max-w-2xl flex-row animate-fade-in p-5">
-            <div className="absolute -right-2 -bottom-2 bg-black h-full w-full -z-50" />
+          <div className="p-4 md:p-5 md:flex justify-between items-center max-w-2xl relative bg-white md:shadow-2xl shadow-black md:border-2 border-black animate-fade-in">
+            <div className="hidden md:block absolute -right-2 -bottom-2 bg-black h-full w-full -z-50" />
             <PokemonCard
               pokemon={pokemonPair.firstPokemon}
               vote={() => voteForRoundest(pokemonPair.firstPokemon.id)}
               disabled={fetchingNext}
             />
-            <div className="p-8 font-bold underline underline-offset-2 decoration-2 decoration-pink-600">
-              Vs
-            </div>
-            <PokemonCard
-              pokemon={pokemonPair.secondPokemon}
-              vote={() => voteForRoundest(pokemonPair.secondPokemon.id)}
-              disabled={fetchingNext}
-            />
-          </div>
-          {/* Mobile */}
-          <div className="md:hidden my-1 justify-between items-center flex flex-col">
-            <PokemonCard
-              pokemon={pokemonPair.firstPokemon}
-              vote={() => voteForRoundest(pokemonPair.firstPokemon.id)}
-              disabled={fetchingNext}
-            />
-            <div className="pt-3 pb-2 font-bold underline underline-offset-2 decoration-2 decoration-pink-600">
-              Vs
+            <div className="p-2.5 flex md:p-8 font-bold underline underline-offset-2 decoration-2 decoration-pink-600">
+              <p className="mx-auto">Vs</p>
             </div>
             <PokemonCard
               pokemon={pokemonPair.secondPokemon}
