@@ -1,5 +1,6 @@
 ## Description
-Misión: encontrar al pokemón más redondo a través de la sabiduría de las masas.
+Encontrar al pokemón más redondo a través de la sabiduría de las masas.
+
     Implementadas:
     *   nextjs
     *   typescript
@@ -8,6 +9,7 @@ Misión: encontrar al pokemón más redondo a través de la sabiduría de las ma
     *   prisma
     *   planetscale (mysql)
     *   next-auth
+    *   custom hooks
 
     Por implementar o cranear:
     *   websockets
@@ -18,9 +20,11 @@ Misión: encontrar al pokemón más redondo a través de la sabiduría de las ma
     *   stacks
     *   lightning
     *   storybook
-    *   algo para testing
-    *   algo para AI (ej: batallas entre pokemon)
+    *   framer-motion
+    *   algo para testing (frontend y backend)
+    *   algo para AI (tensorflow.js)
 
+https://www.youtube.com/watch?v=PKy2lYEnhgs&t=5025s 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
