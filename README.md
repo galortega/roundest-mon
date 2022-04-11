@@ -155,3 +155,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
         3. sitio de cliente (https://blog.jarrodwatts.com/how-i-released-a-next-js-app-to-the-google-play-store-with-aws-amplify)
         4. sitio de admin
 -->
+
+##  Troubleshoot
+
+#   Planetscale
+Error: database branch is not ready yet
+    1. Go to https://app.planetscale.com/galortega/roundest-v1
+    2. Wake the database (free dbs go into a sleep state after a time perior)
