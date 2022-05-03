@@ -5,6 +5,7 @@ import { getPokemonVotesByUser } from "@/backend/utils/getPokemonVotesByUser";
 import { getOptionsForVote } from "@/utils/getRandomPokemon";
 import { z } from "zod";
 
+// use createProtectedRouter to protect the router
 export const router = createRouter()
   .query("get-pokemon-by-id", {
     input: z.object({
